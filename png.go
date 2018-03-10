@@ -22,6 +22,8 @@ import (
 	"image/color"
 	"image/png"
 	"io"
+	"log"
+	"os"
 
 	"github.com/manhtai/imagequant"
 )
