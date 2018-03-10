@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"github.com/manhtai/gopngquant"
 	"log"
 )
 
@@ -12,7 +13,7 @@ func main() {
 
 	flag.Parse()
 
-	err := CompressPngFile(*infile, *outfile, *speed)
+	err := pngquant.CompressPngFile(*infile, *outfile, *speed)
 	if err != nil {
 		log.Fatalf("Compress fail: %s", err.Error())
 	}

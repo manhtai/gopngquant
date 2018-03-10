@@ -3,20 +3,13 @@ gopngquant
 
 A library to compress PNG files using [imagequant][1].
 
-
-## Install
-
-```sh
-go get -u github.com/manhtai/gopngquant
-```
-
-
 ## Usage
 
 - Command line
 
 ```sh
-gopngquant -i input.png -o output.png
+go get -u github.com/manhtai/gopngquant/cmd/pngquant
+pngquant -i input.png -o output.png
 ```
 
 - As a library
